@@ -185,9 +185,9 @@ async def variable(var):  # sourcery no-metrics
             return await zed.edit("`.set var <ConfigVars-name> <value>`")
         await asyncio.sleep(1.5)
         if variable in heroku_var:
-            await zed.edit("**⌔∮ تم تغيـر** `{}` **:**\n **- المتغير :** `{}` \n**- يتم الان اعـادة تشغيـل بـوت زد ثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
+            await zed.edit("**⌔∮ تم تغيـر** `{}` **:**\n **- المتغير :** `{}` \n**- يتم الان اعـادة تشغيـل بـوت سيزر يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
         else:
-            await zed.edit("**⌔∮ تم اضافه** `{}` **:** \n**- المضاف اليه :** `{}` \n**يتم الان اعـادة تشغيـل بـوت زد ثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
+            await zed.edit("**⌔∮ تم اضافه** `{}` **:** \n**- المضاف اليه :** `{}` \n**يتم الان اعـادة تشغيـل بـوت سيزر يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
         heroku_var[variable] = value
     elif exe == "حذف":
         zed = await edit_or_reply(var, "⌔∮ الحصول على معلومات لحذف المتغير. ")
@@ -199,7 +199,7 @@ async def variable(var):  # sourcery no-metrics
         if variable not in heroku_var:
             return await zed.edit(f"⌔∮ `{variable}`**  غير موجود**")
 
-        await zed.edit(f"**⌔∮** `{variable}`  **تم حذفه بنجاح. \n**يتم الان اعـادة تشغيـل بـوت زد ثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**")
+        await zed.edit(f"**⌔∮** `{variable}`  **تم حذفه بنجاح. \n**يتم الان اعـادة تشغيـل بـوت سيزر يستغـرق الامر 2-1 دقيقـه ▬▭ ...**")
         del heroku_var[variable]
 
 
